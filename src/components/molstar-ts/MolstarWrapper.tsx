@@ -24,7 +24,7 @@ export interface MolstarWrapperProps {
   className?: string;
   showControls?: boolean;
   showAxes?: boolean;
-  uiTheme?: "string";
+  uiTheme?: string;
 }
 
 function getStructureUrl(pdbId?: string, url?: string): string | null {

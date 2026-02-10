@@ -1,0 +1,36 @@
+{
+  "name": "molstar-react",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack dev",
+    "lint": "eslint .",
+    "preview": "rspack preview"
+  },
+  "dependencies": {
+    "antd": "^6.2.3",
+    "molstar": "^5.6.1",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@rspack/cli": "^1.7.5",
+    "@rspack/core": "^1.7.5",
+    "@rspack/plugin-react-refresh": "^1.6.0",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "react-refresh": "^0.18.0",
+    "sass-embedded": "^1.97.3",
+    "sass-loader": "^16.0.7",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.0"
+  }
+}

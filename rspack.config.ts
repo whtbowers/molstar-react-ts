@@ -17,10 +17,6 @@ export default defineConfig({
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader'],
-      },
-      {
         test: /\.svg$/,
         type: 'asset',
       },

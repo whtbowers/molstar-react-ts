@@ -59,7 +59,7 @@ export default function MolstarWrapper({
   className = "",
   showControls = true,
   showAxes = true,
-  uiTheme = "default",
+  uiTheme = "light",
 }: MolstarWrapperProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);

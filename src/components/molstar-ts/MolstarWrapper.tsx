@@ -16,10 +16,10 @@ type PluginRef = PluginContext | PluginUIContext | null;
 
 export interface MolstarWrapperProps {
   useInterface?: boolean;
-  pdbId?: string;
-  structuredObject?: any;
+  pdbId?: string | null;
+  // structuredObject?: any;
   url?: string;
-  file?: { filestring: string; type: string };
+  file?: { filestring: string; type: string } | null;
   dimensions?: [number | string, number | string];
   className?: string;
   showControls?: boolean;
@@ -52,7 +52,7 @@ const themeLookup: Record<string, string> = {
 export default function MolstarWrapper({
   useInterface = false,
   pdbId,
-  structuredObject,
+  // structuredObject,
   url,
   file,
   dimensions,
@@ -94,7 +94,7 @@ export default function MolstarWrapper({
       if (runIdRef.current !== runId) return;
       const traj = await plugin.builders.structure.parseTrajectory(
         data,
-        f.type as "mmcif" | "pdb"
+        f.type as "mol" | "mmcif" | "pdb"
       );
       if (runIdRef.current !== runId) return;
       await plugin.builders.structure.hierarchy.applyPreset(traj, "default");

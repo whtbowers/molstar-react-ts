@@ -6,7 +6,6 @@ Whilst there is an existing [molstar-react](https://github.com/samirelanduk/mols
 
 Upcoming work:
 * Further documentation.
-* Surfacing capability to feed in file contents as string.
 
 # Rspack project
 
